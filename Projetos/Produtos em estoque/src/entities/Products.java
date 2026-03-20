@@ -2,31 +2,31 @@ package entities;
 
 public class Products {
 
-    public String Name;
+    public String name;
 
-    public double Price;
+    public double price;
 
-    public int Quantity;
+    public int quantity;
 
     public double totalValueInStock() {
         
-        return (double) Price * Quantity;
+        return price * quantity;
         
     }
 
-    public void AddProducts(int quantity) {
+    public void addProducts(int quantity) {
 
-        Quantity += quantity;
+        this.quantity += quantity;
 
-        System.out.printf("\nProduto: %s\nPreço: R$%.2f\nQuantidade: %d\nValor total em estoque: R$%.2f%n\n", Name, Price, Quantity, Price * Quantity);
+        System.out.printf("\nProduto: %s\nPreço: R$%.2f\nQuantidade: %d\nValor total em estoque: R$%.2f%n\n", name, price, this.quantity, price * this.quantity);
 
     }
 
-    public void RemoveProducts(int quantity) {
+    public void removeProducts(int quantity) {
 
-        Quantity -= quantity;
+        this.quantity -= quantity;
 
-        System.out.printf("\nProduto: %s\nPreço: R$%.2f\nQuantidade: %d\nValor total em estoque: R$%.2f%n\n", Name, Price, Quantity, Price * Quantity);
+        System.out.printf("\nProduto: %s\nPreço: R$%.2f\nQuantidade: %d\nValor total em estoque: R$%.2f%n\n", name, price, this.quantity, price * this.quantity);
 
     }
 

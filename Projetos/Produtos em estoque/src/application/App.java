@@ -12,11 +12,11 @@ public class App {
 
         System.out.print("Digite o nome, preço e quantidade do produto no estoque separado por espaços: ");
 
-        productOne.Name = sc.next();
+        productOne.name = sc.next();
 
-        productOne.Price = sc.nextDouble();
+        productOne.price = sc.nextDouble();
 
-        productOne.Quantity = sc.nextInt();
+        productOne.quantity = sc.nextInt();
         
         int productQuantity;
 
@@ -34,19 +34,19 @@ public class App {
 
                 productQuantity = sc.nextInt();
 
-                productOne.AddProducts(productQuantity);
+                productOne.addProducts(productQuantity);
 
                 break;
 
             case 2:
 
-                if (productOne.Quantity > 0) {
+                if (productOne.quantity > 0) {
 
-                    System.out.printf("\nHá %d produtos no estoque. Quantos produtos você deseja remover? ", productOne.Quantity);
+                    System.out.printf("\nHá %d produtos no estoque. Quantos produtos você deseja remover? ", productOne.quantity);
 
                     productQuantity = sc.nextInt();
                     
-                    while (productQuantity > productOne.Quantity) {
+                    while (productQuantity > productOne.quantity) {
     
                         System.out.print("\nVocê não pode remover mais produtos do que há no estoque! Digite a quantidade novamente: ");
     
@@ -54,7 +54,7 @@ public class App {
     
                     }
 
-                    productOne.RemoveProducts(productQuantity);
+                    productOne.removeProducts(productQuantity);
 
                 } else {
 
