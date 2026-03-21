@@ -41,8 +41,11 @@ public class Products {
 
         this.quantity -= quantity;
 
-        System.out.printf("\nProduto: %s\nPreço: R$%.2f\nQuantidade: %d\nValor total em estoque: R$%.2f%n\n", name, price, this.quantity, price * this.quantity);
+        System.out.print(toString());
+    }
 
+    public String toString() {
+        return String.format("\\nProduto: %s\\nPreço: R$%.2f\\nQuantidade: %d\\nValor total em estoque: R$%.2f%n\\n", name, price, quantity, price * quantity);
     }
 
 }
