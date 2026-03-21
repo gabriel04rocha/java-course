@@ -67,7 +67,11 @@ public class App {
             case 3:
                 System.out.printf("\nHá R$%.2f em produtos no estoque.\n\n", productOne.totalValueInStock()); 
                 break;
-        
+            
+            case 4:
+                System.out.println("Até logo!");
+                break;
+
             default:
                 System.out.println("\nOpção inválida!");
                 break;
