@@ -1,22 +1,22 @@
 package entities;
 
-public class Holder {
+public class Account {
 
     private int accountNumber;
     private String holderName;
     private double accountBalance;
 
-    public  Holder() {
+    public Account() {
 
     }
 
-    public Holder(int accountNumber, String holderName, double accountBalance) {
+    public Account(int accountNumber, String holderName, double accountBalance) {
         this.accountNumber = accountNumber;
         this.holderName = holderName;
         this.accountBalance = accountBalance;
     }
 
-    public Holder(int accountNumber, String holderName) {
+    public Account(int accountNumber, String holderName) {
         this.accountNumber = accountNumber;
         this.holderName = holderName;
     }

@@ -1,7 +1,7 @@
 package application;
 
 import java.util.Scanner;
-import entities.Holder;
+import entities.Account;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -21,10 +21,10 @@ public class App {
 
         double firstDeposit = sc.nextDouble();
 
-        Holder holder = new Holder(accountNumber, holderName, firstDeposit);
+        Account account = new Account(accountNumber, holderName, firstDeposit);
 
         System.out.println("\nSua conta foi criada com sucesso!\n");
-        System.out.println(holder.toString());
+        System.out.println(account.toString());
 
         System.out.print("O que você deseja fazer?\n1. Fazer depósito\n2. Fazer um saque\n3. Mudar o nome do titular da conta\n4. Saber os dados da minha conta\n5. Sair\n\nSua escolha: ");
 
@@ -40,28 +40,28 @@ public class App {
 
                     volatileValue = sc.nextDouble();
 
-                    holder.makeDeposit(volatileValue);
+                    account.makeDeposit(volatileValue);
 
-                    System.out.printf("\nDepósito realizado. Novo saldo: R$%.2f%n\n", holder.getAccountBalance());
+                    System.out.printf("\nDepósito realizado. Novo saldo: R$%.2f%n\n", account.getAccountBalance());
 
                     System.out.print("O que você deseja fazer em seguida?\n1. Fazer depósito\n2. Fazer um saque\n3. Mudar o nome do titular da conta\n4. Saber os dados da minha conta\n5. Sair\n\nSua escolha: ");
 
                     option = sc.nextInt();
                     break;
                 case 2:
-                    System.out.printf("\nHá R$%.2f na conta. Quanto você deseja retirar? ", holder.getAccountBalance());
+                    System.out.printf("\nHá R$%.2f na conta. Quanto você deseja retirar? ", account.getAccountBalance());
 
                     volatileValue = sc.nextDouble();
 
-                    while (volatileValue > holder.getAccountBalance()) {
+                    while (volatileValue > account.getAccountBalance()) {
                         System.out.print("\nValor maior do que seu saldo atual! Tente novamente: ");
 
                         volatileValue = sc.nextDouble();
                     }
 
-                    holder.makeWithdrawal(volatileValue);
+                    account.makeWithdrawal(volatileValue);
 
-                    System.out.printf("\nSaque realizado. Novo saldo: R$%.2f%n", holder.getAccountBalance());
+                    System.out.printf("\nSaque realizado. Novo saldo: R$%.2f%n", account.getAccountBalance());
 
                     System.out.print("O que você deseja fazer em seguida?\n1. Fazer depósito\n2. Fazer um saque\n3. Mudar o nome do titular da conta\n4. Saber os dados da minha conta\n5. Sair\n\nSua escolha: ");
 
@@ -74,16 +74,16 @@ public class App {
                     
                     String newName = sc.nextLine();
 
-                    holder.setHolderName(newName);
+                    account.setHolderName(newName);
 
-                    System.out.println(holder.toString());
+                    System.out.println(account.toString());
 
                     System.out.print("O que você deseja fazer em seguida?\n1. Fazer depósito\n2. Fazer um saque\n3. Mudar o nome do titular da conta\n4. Saber os dados da minha conta\n5. Sair\n\nSua escolha: ");
 
                     option = sc.nextInt();
                     break;
                 case 4:
-                    System.out.println(holder.toString());
+                    System.out.println(account.toString());
 
                     System.out.print("O que você deseja fazer em seguida?\n1. Fazer depósito\n2. Fazer um saque\n3. Mudar o nome do titular da conta\n4. Saber os dados da minha conta\n5. Sair\n\nSua escolha: ");
 
