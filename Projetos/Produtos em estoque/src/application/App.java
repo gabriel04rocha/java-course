@@ -38,13 +38,13 @@ public class App {
 
             case 2:
 
-                if (productOne.quantity > 0) {
+                if (productOne.getQuantity() > 0) {
 
-                    System.out.printf("\nHá %d produtos no estoque. Quantos produtos você deseja remover? ", productOne.quantity);
+                    System.out.printf("\nHá %d produtos no estoque. Quantos produtos você deseja remover? ", productOne.getQuantity());
 
                     productQuantity = sc.nextInt();
                     
-                    while (productQuantity > productOne.quantity) {
+                    while (productQuantity > productOne.getQuantity()) {
     
                         System.out.print("\nVocê não pode remover mais produtos do que há no estoque! Digite a quantidade novamente: ");
     

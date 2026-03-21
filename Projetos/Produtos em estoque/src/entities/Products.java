@@ -2,11 +2,11 @@ package entities;
 
 public class Products {
 
-    public String name;
+    private String name;
 
-    public double price;
+    private double price;
 
-    public int quantity;
+    private int quantity;
 
     public Products() {
 
@@ -23,6 +23,26 @@ public class Products {
         this.price = price;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
     public double totalValueInStock() {
         
         return price * quantity;
@@ -33,7 +53,7 @@ public class Products {
 
         this.quantity += quantity;
 
-        System.out.printf("\nProduto: %s\nPreço: R$%.2f\nQuantidade: %d\nValor total em estoque: R$%.2f%n\n", name, price, this.quantity, price * this.quantity);
+        System.out.print(toString());
 
     }
 
