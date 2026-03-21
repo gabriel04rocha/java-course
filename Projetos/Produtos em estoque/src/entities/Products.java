@@ -8,10 +8,19 @@ public class Products {
 
     public int quantity;
 
+    public Products() {
+
+    }
+
     public Products(String name, double price, int quantity) {
         this.name =  name;
         this.price = price;
         this.quantity = quantity;
+    }
+
+    public Products(String name, double price) {
+        this.name = name;
+        this.price = price;
     }
 
     public double totalValueInStock() {

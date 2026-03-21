@@ -8,15 +8,13 @@ public class App {
        
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Digite o nome, preço e quantidade do produto no estoque separado por espaços: ");
+        System.out.print("Digite o nome e o preço do produto no estoque separado por espaços: ");
 
         String name = sc.next();
 
         double price = sc.nextDouble();
 
-        int quantity = sc.nextInt();
-
-        Products productOne = new Products(name, price, quantity);
+        Products productOne = new Products(name, price);
         
         int productQuantity;
 
