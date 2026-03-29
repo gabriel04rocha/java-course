@@ -38,12 +38,6 @@ public class Employee {
 
     }
 
-    public void setId(int id) {
-
-        this.id = id;
-
-    }
-
     public void setName(String name) {
 
         this.name = name;
@@ -58,7 +52,7 @@ public class Employee {
 
     public String toString() {
 
-        return String.format("Funcionário %s:\nID: %d\nSalário: %.2f%n", name, id, salary);
+        return String.format("\nFuncionário %s:\nID: %d\nSalário: %.2f%n", name, id, salary);
 
     }
 
