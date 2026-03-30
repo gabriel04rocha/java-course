@@ -50,6 +50,7 @@ public class Employee {
 
     }
 
+    @Override
     public String toString() {
 
         return String.format("\nFuncionário %s:\nID: %d\nSalário: %.2f%n", name, id, salary);
