@@ -4,6 +4,7 @@ import entities.Employee;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Optional;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -24,9 +25,10 @@ public class App {
 
             System.out.printf("Dados do %dº funcionário:\n", i + 1);
 
-            System.out.print("ID: ");
-
+            
             int id;
+            
+            System.out.print("ID: ");
 
             do {
 
@@ -34,25 +36,22 @@ public class App {
 
                 if (employeeList.size() > 0) {
 
-                for (Employee employee : employeeList) {
+                    int position = position(employeeList, id);
 
-                    if (id == employee.getId()) {
+                    if (position != -1) {
 
-                        System.out.print("ID já existente!");
+                        System.out.print("Já há um funcionário com este ID! Tente novamente: ");
 
                         existing = true;
-
-                        System.out.print("Tente novamente: ");
 
                     } else {
 
                         existing = false;
 
                     }
-
-                }
                 
-            }
+                }
+
             
             } while (existing == true);
             
@@ -75,15 +74,13 @@ public class App {
 
             System.out.print("\nO que você deseja fazer agora?\n\n[1] Aumentar o salário de um funcionário\n[2] Cadastrar um novo funcionário\n[3] Remover um funcionário\n[4] Mudar os dados de um funcionário\n[5] Ver todos os funcionários cadastrados no sistema\n[6] Sair\n\n");
             System.out.print("Sua resposta: ");
-
+            
             option = sc.nextInt();
-
-            Employee selectedEmployee = new Employee();
-
-            boolean notFound = false;
 
             switch (option) {
                 case 1:
+
+                    Employee selectedEmployee;
                     
                     System.out.println("\nVocê deseja aumentar o salário de qual funcionário? Digite o ID conforme a lista abaixo:\n");
 
@@ -93,33 +90,9 @@ public class App {
 
                     }
 
-                    
-                    do {
-                        System.out.print("\nDigite o ID do funcionário que quer selecionar: ");
+                    System.out.print("ID do funcionário: ");
 
-                        int employeeId = sc.nextInt();
-
-                        for (Employee employee : employeeList) {
-
-                            if (employeeId == employee.getId()) {
-
-                                selectedEmployee = employee;
-
-                                break;
-
-                            }
-                            
-                            if (selectedEmployee.getId() == 0 && employeeList.indexOf(employee) == employeeList.size() - 1) {
-
-                                System.out.print("\nFuncionário não encontrado! Tente novamente: ");
-
-                                notFound = true;
-
-                            }
-
-                        }
-
-                    } while (notFound == true);
+                    selectedEmployee = findEmployee(employeeList, sc.nextInt());
 
                     System.out.print("\nDigite a porcentagem pela qual você deseja aumentar o salário deste funcionário: ");
 
@@ -130,10 +103,37 @@ public class App {
                     break;
                 case 2:
 
+                    boolean existing = false;
+
+                    int id;
+
                     System.out.print("Digite os dados do novo funcionário:\n");
                     System.out.print("ID: ");
 
-                    int id = sc.nextInt();
+                    do {
+
+                        id = sc.nextInt();
+
+                        if (employeeList.size() > 0) {
+
+                            int position = position(employeeList, id);
+
+                            if (position != -1) {
+
+                                System.out.print("Já há um funcionário com este ID! Tente novamente: ");
+
+                                existing = true;
+
+                            } else {
+
+                                existing = false;
+
+                            }
+                        
+                        }
+
+            
+                    } while (existing == true);
 
                     System.out.print("Nome: ");
 
@@ -158,38 +158,16 @@ public class App {
 
                     }
 
-                    do {
+                    System.out.print("ID do funcionário: ");
 
-                        System.out.print("\nDigite o ID do funcionário que quer selecionar: ");
-                        
-                        int employeeId = sc.nextInt();
-
-                        for (Employee employee : employeeList) {
-
-                            if (employeeId == employee.getId()) {
-
-                                selectedEmployee = employee;
-
-                                break;
-
-                            }
-                            
-                            if (selectedEmployee.getId() == 0 && employeeList.indexOf(employee) == employeeList.size() - 1) {
-
-                                System.out.print("\nFuncionário não encontrado! Tente novamente: ");
-
-                                notFound = true;
-
-                            }
-
-                        } 
-
-                    } while (notFound == true);
+                    selectedEmployee = findEmployee(employeeList, sc.nextInt());
 
                     employeeList.remove(selectedEmployee);
                     
                     break;
                 case 4:
+
+                    boolean notFound = false;
                     
                     System.out.print("\nDigite o ID do funcionário ao qual deseja fazer a alteração conforme a lista abaixo: ");
 
@@ -199,35 +177,34 @@ public class App {
 
                     }
 
+                    System.out.print("ID do funcionário: ");
+
+                    
                     do {
-
-                        System.out.print("\nDigite o ID do funcionário que quer selecionar: ");
                         
-                        int employeeId = sc.nextInt();
+                        id = sc.nextInt();
+                        
+                        selectedEmployee = findEmployee(employeeList, id);
 
-                        for (Employee employee : employeeList) {
+                        if (selectedEmployee.getId() == null) {
 
-                            if (employeeId == employee.getId()) {
+                            System.out.print("Não há nenhum funcionário cadastrado com este ID. Tente novamente: ");
 
-                                selectedEmployee = employee;
+                            notFound = true;
 
-                                notFound = false;
+                        } else {
 
-                                break;
+                            notFound = false;
 
-                            }
-                            
-                            if (selectedEmployee.getId() == 0 && employeeList.indexOf(employee) == employeeList.size() - 1) {
-
-                                System.out.print("\nFuncionário não encontrado! Tente novamente: ");
-
-                                notFound = true;
-
-                            }
-
-                        } 
+                        }
 
                     } while (notFound == true);
+
+                    if (selectedEmployee.getId() == null) {
+
+                        System.out.print("Não há nenhum funcionário com este ID cadastrado. Tente novamente: ");
+
+                    }
 
                     System.out.print("\nATENÇÃO! Só é possível fazer a alteração do nome do funcionário selecionado.\nCaso deseje fazer uma alteração no salário, digite o nome do funcionário da forma que está e selecione a opção 1.\n");
 
@@ -271,4 +248,37 @@ public class App {
         sc.close();
 
     }
+
+    static Employee findEmployee(List<Employee> employeeList, Integer id) {
+
+        int position = position(employeeList, id);
+
+        if (position == -1) {
+
+            return new Employee();
+
+        } else {
+
+            return employeeList.get(position);
+
+        }
+
+    }
+
+    static int position(List<Employee> employeeList, Integer id) {
+
+        Optional<Employee> position = employeeList.stream().filter(employee -> employee.getId().equals(id)).findFirst();
+        
+        if (position.isPresent()) {
+            
+            return employeeList.indexOf(position.get());
+
+        } else {
+
+            return -1;
+
+        }
+
+    }
+
 }

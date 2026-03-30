@@ -2,17 +2,17 @@ package entities;
 
 public class Employee {
 
-    private int id;
+    private Integer id;
     
     private String name;
 
-    private double salary;
+    private Double salary;
 
     public Employee() {
 
     }
 
-    public Employee(int id, String name, double salary) {
+    public Employee(Integer id, String name, Double salary) {
 
         this.id = id;
         this.name = name;
@@ -20,7 +20,7 @@ public class Employee {
 
     }
 
-    public int getId() {
+    public Integer getId() {
 
         return id;
         
@@ -32,7 +32,7 @@ public class Employee {
         
     }
 
-    public double getSalary() {
+    public Double getSalary() {
 
         return salary;
 
