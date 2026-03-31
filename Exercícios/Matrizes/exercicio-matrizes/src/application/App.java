@@ -7,11 +7,11 @@ public class App {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Quantas linhas a matriz terá?");
+        System.out.print("Quantas linhas a matriz terá? ");
 
         int numberOfLines = sc.nextInt();
 
-        System.out.print("Quantas colunas a matriz terá?");
+        System.out.print("Quantas colunas a matriz terá? ");
 
         int numberOfColumns = sc.nextInt();
 
@@ -29,9 +29,40 @@ public class App {
 
         }
 
-        System.out.print("Agora digite um número que pertence à matriz: ");
+        System.out.print("Agora digite uma posição da matriz (coluna, linha): ");
 
-        int numberToCheck = sc.nextInt();
+        int[] position = {sc.nextInt(), sc.nextInt()};
+        
+        int left, right, top, bottom;
+
+        if (position[0] - 1 >= 0) {
+
+            left = matrix[position[0] - 1][position[1]];
+            System.out.printf("À esquerda: %d%n", left);
+            
+        }
+        
+        if (position[0] + 1 <= matrix[0].length - 1) {
+
+            right = matrix[position[0] + 1][position[1]];
+            System.out.printf("À direita: %d%n", right);
+
+        }
+
+        if (position[1] - 1 >= 0) {
+
+            top = matrix[position[0]][position[1] - 1];
+            System.out.printf("Em cima: %d%n", top);
+
+        }
+
+        if (position[1] + 1 >= matrix.length - 1) {
+
+            bottom = matrix[position[0]][position[1] + 1];
+            System.out.printf("Abaixo: %d%n", bottom);
+
+        }
+        
 
         sc.close();
 
