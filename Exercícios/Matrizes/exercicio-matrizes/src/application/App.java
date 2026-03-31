@@ -15,51 +15,65 @@ public class App {
 
         int numberOfColumns = sc.nextInt();
 
-        int[][] matrix = new int[numberOfColumns][numberOfLines];
+        int[][] matrix = new int[numberOfLines][numberOfColumns];
 
-        for (int i = 0; i < numberOfLines; i++) {
+        for (int i = 0; i < matrix.length; i++) {
 
             System.out.printf("Digite os %d valores referentes às colunas da %dº linha: ", numberOfColumns, i + 1);
 
-             for (int x = 0; x < numberOfColumns; x++) {
+             for (int x = 0; x < matrix[i].length; x++) {
 
-                matrix[x][i] = sc.nextInt();
+                matrix[i][x] = sc.nextInt();
 
             }
 
         }
 
-        System.out.print("Agora digite uma posição da matriz (coluna, linha): ");
+        System.out.print("Agora digite um número presente na matriz: ");
 
-        int[] position = {sc.nextInt(), sc.nextInt()};
-        
+        int selectedNumber = sc.nextInt();
+
         int left, right, top, bottom;
 
-        if (position[0] - 1 >= 0) {
+        for (int i = 0; i < matrix.length; i++) {
 
-            left = matrix[position[0] - 1][position[1]];
-            System.out.printf("À esquerda: %d%n", left);
-            
-        }
-        
-        if (position[0] + 1 <= matrix[0].length - 1) {
+            for (int x = 0; x < matrix[i].length; x++) {
 
-            right = matrix[position[0] + 1][position[1]];
-            System.out.printf("À direita: %d%n", right);
+                if (matrix[i][x] == selectedNumber) {
 
-        }
+                    System.out.printf("Position %d,%d%n", i, x);
 
-        if (position[1] - 1 >= 0) {
+                    if (x - 1 >= 0) {
 
-            top = matrix[position[0]][position[1] - 1];
-            System.out.printf("Em cima: %d%n", top);
+                        left = matrix[i][x - 1];
+                        System.out.printf("À esquerda: %d%n", left);
+                        
+                    }
+                    
+                    if (x + 1 <= (matrix[0].length - 1)) {
 
-        }
+                        right = matrix[i][x + 1];
+                        System.out.printf("À direita: %d%n", right);
 
-        if (position[1] + 1 >= matrix.length - 1) {
+                    }
 
-            bottom = matrix[position[0]][position[1] + 1];
-            System.out.printf("Abaixo: %d%n", bottom);
+                    if (i - 1 >= 0) {
+
+                        top = matrix[i - 1][x];
+                        System.out.printf("Em cima: %d%n", top);
+
+                    }
+
+                    if (i + 1 >= (matrix.length - 1)) {
+
+                        bottom = matrix[i + 1][x];
+                        System.out.printf("Abaixo: %d%n", bottom);
+
+                    }
+
+                }
+
+            }
 
         }
         
