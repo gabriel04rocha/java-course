@@ -1,0 +1,12 @@
+[submodule "Projetos/worker-contracts"]
+	path = Projetos/worker-contracts
+	url = https://github.com/gabriel04rocha/worker-contracts
+[submodule "Projetos/company-employees-crud"]
+	path = Projetos/company-employees-crud
+	url = https://github.com/gabriel04rocha/company-employees-crud
+[submodule "Projetos/bank-account-crud-project"]
+	path = Projetos/bank-account-crud-project
+	url = https://github.com/gabriel04rocha/bank-account-crud-project
+[submodule "Projetos/products-in-stock"]
+	path = Projetos/products-in-stock
+	url = https://github.com/gabriel04rocha/products-in-stock
