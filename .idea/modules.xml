@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Olá Mundo/Olá Mundo.iml" filepath="$PROJECT_DIR$/Exercícios/Olá Mundo/Olá Mundo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Variáveis e formatação/Variáveis e formatação.iml" filepath="$PROJECT_DIR$/Exercícios/Variáveis e formatação/Variáveis e formatação.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Projetos/bank-account-crud-project/bank-account-crud-project.iml" filepath="$PROJECT_DIR$/Projetos/bank-account-crud-project/bank-account-crud-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Projetos/company-employees-crud/company-employees-crud.iml" filepath="$PROJECT_DIR$/Projetos/company-employees-crud/company-employees-crud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Vetores/exercicio-alturas/exercicio-alturas.iml" filepath="$PROJECT_DIR$/Exercícios/Vetores/exercicio-alturas/exercicio-alturas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/POO (Classes, Atributos e Métodos)/exercicio-aluno/exercicio-aluno.iml" filepath="$PROJECT_DIR$/Exercícios/POO (Classes, Atributos e Métodos)/exercicio-aluno/exercicio-aluno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Vetores/exercicio-aprovados/exercicio-aprovados.iml" filepath="$PROJECT_DIR$/Exercícios/Vetores/exercicio-aprovados/exercicio-aprovados.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/POO (Classes, Atributos e Métodos)/exercicio-area-de-triangulos/exercicio-area-de-triangulos.iml" filepath="$PROJECT_DIR$/Exercícios/POO (Classes, Atributos e Métodos)/exercicio-area-de-triangulos/exercicio-area-de-triangulos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Estruturas condicionais/exercicio-coordenada/exercicio-coordenada.iml" filepath="$PROJECT_DIR$/Exercícios/Estruturas condicionais/exercicio-coordenada/exercicio-coordenada.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Estruturas repetitivas/Estrutura While/exercicio-coordenadas/exercicio-coordenadas.iml" filepath="$PROJECT_DIR$/Exercícios/Estruturas repetitivas/Estrutura While/exercicio-coordenadas/exercicio-coordenadas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Vetores/exercicio-dados/exercicio-dados.iml" filepath="$PROJECT_DIR$/Exercícios/Vetores/exercicio-dados/exercicio-dados.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Matrizes/exercicio-diagonal/exercicio-diagonal.iml" filepath="$PROJECT_DIR$/Exercícios/Matrizes/exercicio-diagonal/exercicio-diagonal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Leitura de dados/exercicio-diferenca/exercicio-diferenca.iml" filepath="$PROJECT_DIR$/Exercícios/Leitura de dados/exercicio-diferenca/exercicio-diferenca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Estruturas repetitivas/Estrutura For/exercicio-divisao/exercicio-divisao.iml" filepath="$PROJECT_DIR$/Exercícios/Estruturas repetitivas/Estrutura For/exercicio-divisao/exercicio-divisao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Estruturas repetitivas/Estrutura For/exercicio-divisores/exercicio-divisores.iml" filepath="$PROJECT_DIR$/Exercícios/Estruturas repetitivas/Estrutura For/exercicio-divisores/exercicio-divisores.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/POO (Classes, Atributos e Métodos)/exercicio-dolar/exercicio-dolar.iml" filepath="$PROJECT_DIR$/Exercícios/POO (Classes, Atributos e Métodos)/exercicio-dolar/exercicio-dolar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Estruturas repetitivas/Estrutura For/exercicio-fatorial/exercicio-fatorial.iml" filepath="$PROJECT_DIR$/Exercícios/Estruturas repetitivas/Estrutura For/exercicio-fatorial/exercicio-fatorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/POO (Classes, Atributos e Métodos)/exercicio-funcionario/exercicio-funcionario.iml" filepath="$PROJECT_DIR$/Exercícios/POO (Classes, Atributos e Métodos)/exercicio-funcionario/exercicio-funcionario.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Estruturas repetitivas/Estrutura For/exercicio-impares/exercicio-impares.iml" filepath="$PROJECT_DIR$/Exercícios/Estruturas repetitivas/Estrutura For/exercicio-impares/exercicio-impares.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Estruturas repetitivas/Estrutura For/exercicio-intervalo/exercicio-intervalo.iml" filepath="$PROJECT_DIR$/Exercícios/Estruturas repetitivas/Estrutura For/exercicio-intervalo/exercicio-intervalo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Estruturas condicionais/exercicio-intervalo/exercicio-intervalo2.iml" filepath="$PROJECT_DIR$/Exercícios/Estruturas condicionais/exercicio-intervalo/exercicio-intervalo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Estruturas condicionais/exercicio-jogo/exercicio-jogo.iml" filepath="$PROJECT_DIR$/Exercícios/Estruturas condicionais/exercicio-jogo/exercicio-jogo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Estruturas condicionais/exercicio-lisarb/exercicio-lisarb.iml" filepath="$PROJECT_DIR$/Exercícios/Estruturas condicionais/exercicio-lisarb/exercicio-lisarb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Vetores/exercicio-maior/exercicio-maior.iml" filepath="$PROJECT_DIR$/Exercícios/Vetores/exercicio-maior/exercicio-maior.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Vetores/exercicio-mais-velho/src/exercicio-mais-velho.iml" filepath="$PROJECT_DIR$/Exercícios/Vetores/exercicio-mais-velho/src/exercicio-mais-velho.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Vetores/exercicio-mais-velho/exercicio-mais-velho2.iml" filepath="$PROJECT_DIR$/Exercícios/Vetores/exercicio-mais-velho/exercicio-mais-velho2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Matrizes/exercicio-matrizes/exercicio-matrizes.iml" filepath="$PROJECT_DIR$/Exercícios/Matrizes/exercicio-matrizes/exercicio-matrizes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Vetores/exercicio-media/exercicio-media.iml" filepath="$PROJECT_DIR$/Exercícios/Vetores/exercicio-media/exercicio-media.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Vetores/exercicio-media-pares/exercicio-media-pares.iml" filepath="$PROJECT_DIR$/Exercícios/Vetores/exercicio-media-pares/exercicio-media-pares.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Estruturas condicionais/exercicio-multiplos/exercicio-multiplos.iml" filepath="$PROJECT_DIR$/Exercícios/Estruturas condicionais/exercicio-multiplos/exercicio-multiplos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Estruturas condicionais/exercicio-negativo/exercicio-negativo.iml" filepath="$PROJECT_DIR$/Exercícios/Estruturas condicionais/exercicio-negativo/exercicio-negativo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Vetores/exercicio-negativos/exercicio-negativos.iml" filepath="$PROJECT_DIR$/Exercícios/Vetores/exercicio-negativos/exercicio-negativos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Estruturas condicionais/exercicio-numero-par/exercicio-numero-par.iml" filepath="$PROJECT_DIR$/Exercícios/Estruturas condicionais/exercicio-numero-par/exercicio-numero-par.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Vetores/exercicio-pares/exercicio-pares.iml" filepath="$PROJECT_DIR$/Exercícios/Vetores/exercicio-pares/exercicio-pares.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Leitura de dados/exercicio-pecas/exercicio-pecas.iml" filepath="$PROJECT_DIR$/Exercícios/Leitura de dados/exercicio-pecas/exercicio-pecas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Vetores/exercicio-pensionato/src/exercicio-pensionato.iml" filepath="$PROJECT_DIR$/Exercícios/Vetores/exercicio-pensionato/src/exercicio-pensionato.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Vetores/exercicio-pensionato/exercicio-pensionato2.iml" filepath="$PROJECT_DIR$/Exercícios/Vetores/exercicio-pensionato/exercicio-pensionato2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Estruturas repetitivas/Estrutura While/exercicio-posto/exercicio-posto.iml" filepath="$PROJECT_DIR$/Exercícios/Estruturas repetitivas/Estrutura While/exercicio-posto/exercicio-posto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Estruturas repetitivas/Estrutura For/exercicio-potencia/exercicio-potencia.iml" filepath="$PROJECT_DIR$/Exercícios/Estruturas repetitivas/Estrutura For/exercicio-potencia/exercicio-potencia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Leitura de dados/exercicio-raio/exercicio-raio.iml" filepath="$PROJECT_DIR$/Exercícios/Leitura de dados/exercicio-raio/exercicio-raio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/POO (Classes, Atributos e Métodos)/exercicio-retangulo/exercicio-retangulo.iml" filepath="$PROJECT_DIR$/Exercícios/POO (Classes, Atributos e Métodos)/exercicio-retangulo/exercicio-retangulo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Leitura de dados/exercicio-salario/exercicio-salario.iml" filepath="$PROJECT_DIR$/Exercícios/Leitura de dados/exercicio-salario/exercicio-salario.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Estruturas repetitivas/Estrutura While/exercicio-senha/exercicio-senha.iml" filepath="$PROJECT_DIR$/Exercícios/Estruturas repetitivas/Estrutura While/exercicio-senha/exercicio-senha.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Leitura de dados/exercicio-soma/exercicio-soma.iml" filepath="$PROJECT_DIR$/Exercícios/Leitura de dados/exercicio-soma/exercicio-soma.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Vetores/exercicio-soma-vetores/exercicio-soma-vetores.iml" filepath="$PROJECT_DIR$/Exercícios/Vetores/exercicio-soma-vetores/exercicio-soma-vetores.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Vetores/exercicio-soma/exercicio-soma2.iml" filepath="$PROJECT_DIR$/Exercícios/Vetores/exercicio-soma/exercicio-soma2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Estruturas condicionais/exercicio-tabela/exercicio-tabela.iml" filepath="$PROJECT_DIR$/Exercícios/Estruturas condicionais/exercicio-tabela/exercicio-tabela.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Estruturas repetitivas/Estrutura For/exercicio-teste/exercicio-teste.iml" filepath="$PROJECT_DIR$/Exercícios/Estruturas repetitivas/Estrutura For/exercicio-teste/exercicio-teste.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Leitura de dados/exercicio-testes/exercicio-testes.iml" filepath="$PROJECT_DIR$/Exercícios/Leitura de dados/exercicio-testes/exercicio-testes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercícios/Leitura de dados/exercicio-triangulo/exercicio-triangulo.iml" filepath="$PROJECT_DIR$/Exercícios/Leitura de dados/exercicio-triangulo/exercicio-triangulo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/java-course.iml" filepath="$PROJECT_DIR$/.idea/java-course.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Projetos/products-in-stock/products-in-stock.iml" filepath="$PROJECT_DIR$/Projetos/products-in-stock/products-in-stock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Projetos/worker-contracts/worker-contracts.iml" filepath="$PROJECT_DIR$/Projetos/worker-contracts/worker-contracts.iml" />
+    </modules>
+  </component>
+</project>
