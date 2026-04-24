@@ -10,9 +10,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+        Scanner sc = null;
+
         try {
+            sc = new Scanner(System.in);
             Locale.setDefault(Locale.US);
-            Scanner sc = new Scanner(System.in);
 
             System.out.println("Enter account data: ");
             System.out.print("Number: ");
@@ -32,9 +34,12 @@ public class Main {
 
             System.out.println("New balance: " + userAccount.getBalance());
 
-            sc.close();
         } catch (NoBalanceException | AmountException e) {
             System.out.println("Withdraw error: " + e.getMessage());
+        } finally {
+            if (sc != null) {
+                sc.close();
+            }
         }
     }
 }
