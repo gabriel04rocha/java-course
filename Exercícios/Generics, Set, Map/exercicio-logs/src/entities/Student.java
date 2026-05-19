@@ -3,10 +3,11 @@ package entities;
 import java.util.Collections;
 import java.util.Objects;
 import java.util.Set;
+import java.util.HashSet;
 
 public class Student {
     private Integer id;
-    private Set<Course> courses;
+    private final Set<Course> courses = new HashSet<>();
 
     public Student(Integer id) {
         this.id = id;
